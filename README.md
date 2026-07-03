@@ -2,6 +2,9 @@
 
 A front-end redesign concept for the Bangladesh Public Administration Training Centre School & College (BPATCSC) located in Savar, Dhaka. This project focuses on high legibility, performance, and strict web accessibility standards.
 
+## Live Demo
+[https://abdullah22481.github.io/bpatcsc-college/]
+
 ## Key Features
 * **Semantic HTML5 Structure:** Built using proper architectural tags (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`) to ensure clean document outline layouts.
 * **Accessible Navigation:** Desktop mega-menu and mobile accordion drawer controlled natively via JavaScript using `aria-expanded` and `aria-controls` states for screen-reader and keyboard compatibility.
