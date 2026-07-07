@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BPATCSC | Bangladesh Public Administration Training Centre School &amp; College</title>
-  <meta name="description" content="Official website of BPATCSC — Bangladesh Public Administration Training Centre School & College." />
-
-  <!-- ============================================================
-       FONTS
-       Display / heading face: Archivo (geometric grotesk, firm and institutional)
-       Body face: Inter (high legibility sans-serif for long-form reading)
-       Both are sans-serif per the brief's high-legibility requirement.
-  ============================================================= -->
+  <meta name="description"
+    content="Official website of BPATCSC — Bangladesh Public Administration Training Centre School & College." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Skip link for keyboard / screen-reader users -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- ============================================================
-       UTILITY BAR
-       Small top strip for secondary, low-frequency links.
-       Keeps the main header focused purely on navigation.
-  ============================================================= -->
   <div class="utility-bar">
     <div class="container utility-bar__inner">
       <p class="utility-bar__notice">Notice: Admission circular for 2026–27 session will be published soon.</p>
@@ -38,12 +31,6 @@
     </div>
   </div>
 
-  <!-- ============================================================
-       HEADER + MEGA-MENU NAVIGATION
-       - Desktop: hover/focus reveals dropdowns & mega-menu panels.
-       - Mobile: single accordion drawer, toggled by the hamburger button.
-       - Every panel is controlled via aria-expanded for accessibility.
-  ============================================================= -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
 
@@ -51,8 +38,8 @@
         <span class="brand__mark" aria-hidden="true">
           <!-- Minimal monogram mark, echoes the hero linework -->
           <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="38" height="38" rx="2" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M10 27V13L20 20L30 13V27" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="1" y="1" width="38" height="38" rx="2" stroke="currentColor" stroke-width="1.5" />
+            <path d="M10 27V13L20 20L30 13V27" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
           </svg>
         </span>
         <span class="brand__text">
@@ -82,14 +69,16 @@
           <li class="primary-nav__item has-dropdown">
             <button class="primary-nav__trigger" aria-expanded="false">
               About
-              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" />
+              </svg>
             </button>
             <div class="dropdown-panel">
               <ul class="dropdown-panel__list">
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#mission-vision">Mission &amp; Vision</a></li>
-                <li><a href="#principal-message">Principal's Message</a></li>
-                <li><a href="#governing-body">Governing Body</a></li>
+                <li><a href="about.html#about-us">About Us</a></li>
+                <li><a href="about.html#mission-vision">Mission &amp; Vision</a></li>
+                <li><a href="about.html#principal-message">Principal's Message</a></li>
+                <li><a href="about.html#governing-body">Governing Body</a></li>
               </ul>
             </div>
           </li>
@@ -98,7 +87,9 @@
           <li class="primary-nav__item has-megamenu">
             <button class="primary-nav__trigger" aria-expanded="false">
               Academics
-              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" />
+              </svg>
             </button>
             <div class="megamenu-panel">
               <div class="megamenu-panel__grid">
@@ -106,29 +97,29 @@
                 <div class="megamenu-panel__column">
                   <p class="megamenu-panel__heading">Academic Policy</p>
                   <ul>
-                    <li><a href="#rules-regulations">Rules &amp; Regulations</a></li>
-                    <li><a href="#teaching-process">Teaching Process</a></li>
-                    <li><a href="#examination-process">Examination Process</a></li>
-                    <li><a href="#subject-change">Subject Change</a></li>
-                    <li><a href="#selective-subjects">Selective Subjects</a></li>
+                    <li><a href="academics.html#rules-regulations">Rules &amp; Regulations</a></li>
+                    <li><a href="academics.html#teaching-process">Teaching Process</a></li>
+                    <li><a href="academics.html#examination-process">Examination Process</a></li>
+                    <li><a href="academics.html#subject-change">Subject Change</a></li>
+                    <li><a href="academics.html#selective-subjects">Selective Subjects</a></li>
                   </ul>
                 </div>
 
                 <div class="megamenu-panel__column">
                   <p class="megamenu-panel__heading">Campus Life</p>
                   <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#college-dress">College Dress</a></li>
-                    <li><a href="#identity-card">Identity Card</a></li>
-                    <li><a href="#transportation">Transportation</a></li>
+                    <li><a href="academics.html#features">Features</a></li>
+                    <li><a href="academics.html#college-dress">College Dress</a></li>
+                    <li><a href="academics.html#identity-card">Identity Card</a></li>
+                    <li><a href="academics.html#transportation">Transportation</a></li>
                   </ul>
                 </div>
 
                 <div class="megamenu-panel__column">
                   <p class="megamenu-panel__heading">Resources</p>
                   <ul>
-                    <li><a href="#library">Library</a></li>
-                    <li><a href="#laboratory">Laboratory</a></li>
+                    <li><a href="academics.html#library">Library</a></li>
+                    <li><a href="academics.html#laboratory">Laboratory</a></li>
                   </ul>
                 </div>
 
@@ -140,7 +131,9 @@
           <li class="primary-nav__item has-dropdown">
             <button class="primary-nav__trigger" aria-expanded="false">
               Teacher &amp; Staff
-              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" />
+              </svg>
             </button>
             <div class="dropdown-panel">
               <ul class="dropdown-panel__list">
@@ -155,7 +148,9 @@
           <li class="primary-nav__item has-dropdown">
             <button class="primary-nav__trigger" aria-expanded="false">
               Online Service
-              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+              <svg class="chevron" viewBox="0 0 10 6" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" />
+              </svg>
             </button>
             <div class="dropdown-panel">
               <ul class="dropdown-panel__list">
@@ -184,15 +179,6 @@
   <div class="nav-scrim" id="nav-scrim"></div>
 
   <main id="main-content">
-
-    <!-- ============================================================
-         HERO
-         Replaces the old image carousel with a single, quiet
-         line-drawing animation: it "draws itself" once on load
-         (stroke-dasharray/offset technique — the classic, dependency-
-         free way to fake a Lottie-style vector build-in), then settles
-         into a slow, ambient drift. See js/script.js -> initHeroAnimation().
-    ============================================================= -->
     <section class="hero" id="home">
       <div class="container hero__inner">
 
@@ -206,46 +192,47 @@
           </p>
           <div class="hero__actions">
             <a href="#online-admission" class="btn btn--primary">Apply for Admission</a>
-            <a href="#about-us" class="btn btn--ghost">About the Institute</a>
+            <a href="about.html#about-us" class="btn btn--ghost">About the Institute</a>
           </div>
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <!-- Vector line-art of an institutional building + open book.
-               Paths are drawn on load, then a few elements (sun rings,
-               floating leaf) drift gently forever. All motion respects
-               prefers-reduced-motion (see CSS). -->
+
           <svg id="hero-svg" class="hero-svg" viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg">
 
             <!-- ground line -->
-            <line class="draw-path" x1="40" y1="340" x2="480" y2="340" stroke="currentColor" stroke-width="1.5"/>
+            <line class="draw-path" x1="40" y1="340" x2="480" y2="340" stroke="currentColor" stroke-width="1.5" />
 
             <!-- building silhouette -->
-            <path class="draw-path" d="M110 340V180L260 110L410 180V340" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            <path class="draw-path" d="M140 340V210H380V340" stroke="currentColor" stroke-width="1.2"/>
-            <path class="draw-path" d="M170 340V250H210V340" stroke="currentColor" stroke-width="1.2"/>
-            <path class="draw-path" d="M240 340V250H280V340" stroke="currentColor" stroke-width="1.2"/>
-            <path class="draw-path" d="M310 340V250H350V340" stroke="currentColor" stroke-width="1.2"/>
+            <path class="draw-path" d="M110 340V180L260 110L410 180V340" stroke="currentColor" stroke-width="1.6"
+              stroke-linejoin="round" />
+            <path class="draw-path" d="M140 340V210H380V340" stroke="currentColor" stroke-width="1.2" />
+            <path class="draw-path" d="M170 340V250H210V340" stroke="currentColor" stroke-width="1.2" />
+            <path class="draw-path" d="M240 340V250H280V340" stroke="currentColor" stroke-width="1.2" />
+            <path class="draw-path" d="M310 340V250H350V340" stroke="currentColor" stroke-width="1.2" />
 
             <!-- central pediment column -->
-            <path class="draw-path" d="M260 110V180" stroke="currentColor" stroke-width="1.2"/>
+            <path class="draw-path" d="M260 110V180" stroke="currentColor" stroke-width="1.2" />
 
             <!-- steps -->
-            <line class="draw-path" x1="95" y1="340" x2="425" y2="340" stroke="currentColor" stroke-width="1.2"/>
-            <line class="draw-path" x1="80" y1="352" x2="440" y2="352" stroke="currentColor" stroke-width="1.2"/>
+            <line class="draw-path" x1="95" y1="340" x2="425" y2="340" stroke="currentColor" stroke-width="1.2" />
+            <line class="draw-path" x1="80" y1="352" x2="440" y2="352" stroke="currentColor" stroke-width="1.2" />
 
             <!-- open book, foreground -->
-            <path class="draw-path" d="M140 372C170 360 210 360 232 372V300C210 288 170 288 140 300V372Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path class="draw-path" d="M324 372C294 360 254 360 232 372V300C254 288 294 288 324 300V372Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-            <path class="draw-path" d="M232 372V300" stroke="currentColor" stroke-width="1.2"/>
+            <path class="draw-path" d="M140 372C170 360 210 360 232 372V300C210 288 170 288 140 300V372Z"
+              stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+            <path class="draw-path" d="M324 372C294 360 254 360 232 372V300C254 288 294 288 324 300V372Z"
+              stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+            <path class="draw-path" d="M232 372V300" stroke="currentColor" stroke-width="1.2" />
 
             <!-- ambient drifting accents -->
             <g class="drift-slow">
-              <circle cx="440" cy="90" r="26" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-              <circle cx="440" cy="90" r="36" stroke="currentColor" stroke-width="0.6" opacity="0.3"/>
+              <circle cx="440" cy="90" r="26" stroke="currentColor" stroke-width="1" opacity="0.5" />
+              <circle cx="440" cy="90" r="36" stroke="currentColor" stroke-width="0.6" opacity="0.3" />
             </g>
             <g class="drift-fast">
-              <path d="M70 150C78 140 92 140 100 150" stroke="currentColor" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
+              <path d="M70 150C78 140 92 140 100 150" stroke="currentColor" stroke-width="1" opacity="0.5"
+                stroke-linecap="round" />
             </g>
           </svg>
         </div>
@@ -253,12 +240,6 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         QUICK-ACCESS STRIP
-         High-frequency destinations surfaced as calm, equal-weight
-         cards directly beneath the fold — an alternative to burying
-         them only inside the mega-menu.
-    ============================================================= -->
     <section class="quick-links" aria-label="Quick access">
       <div class="container quick-links__grid">
         <a class="quick-card reveal" href="#online-admission">
@@ -301,7 +282,7 @@
             maintains an academic culture built on punctuality, discipline, and
             measurable outcomes.
           </p>
-          <a href="#mission-vision" class="text-link">Read our Mission &amp; Vision</a>
+          <a href="about.html#mission-vision" class="text-link">Read our Mission &amp; Vision</a>
         </div>
       </div>
     </section>
@@ -320,22 +301,22 @@
           <article class="feature-card reveal">
             <h3>Teaching Process</h3>
             <p>Structured lesson planning with continuous assessment across every subject.</p>
-            <a href="#teaching-process" class="text-link">Learn more</a>
+            <a href="academics.html#teaching-process" class="text-link">Learn more</a>
           </article>
           <article class="feature-card reveal">
             <h3>Examination Process</h3>
             <p>Standardised testing schedules aligned with national board requirements.</p>
-            <a href="#examination-process" class="text-link">Learn more</a>
+            <a href="academics.html#examination-process" class="text-link">Learn more</a>
           </article>
           <article class="feature-card reveal">
             <h3>Library</h3>
             <p>A quiet, well-catalogued collection supporting independent study.</p>
-            <a href="#library" class="text-link">Learn more</a>
+            <a href="academics.html#library" class="text-link">Learn more</a>
           </article>
           <article class="feature-card reveal">
             <h3>Laboratory</h3>
             <p>Dedicated science laboratories equipped for practical coursework.</p>
-            <a href="#laboratory" class="text-link">Learn more</a>
+            <a href="academics.html#laboratory" class="text-link">Learn more</a>
           </article>
         </div>
       </div>
@@ -389,20 +370,20 @@
       <nav class="site-footer__col" aria-label="About">
         <p class="site-footer__heading">About</p>
         <ul>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#mission-vision">Mission &amp; Vision</a></li>
-          <li><a href="#principal-message">Principal's Message</a></li>
-          <li><a href="#governing-body">Governing Body</a></li>
+          <li><a href="about.html#about-us">About Us</a></li>
+          <li><a href="about.html#mission-vision">Mission &amp; Vision</a></li>
+          <li><a href="about.html#principal-message">Principal's Message</a></li>
+          <li><a href="about.html#governing-body">Governing Body</a></li>
         </ul>
       </nav>
 
       <nav class="site-footer__col" aria-label="Academics">
         <p class="site-footer__heading">Academics</p>
         <ul>
-          <li><a href="#rules-regulations">Rules &amp; Regulations</a></li>
-          <li><a href="#examination-process">Examination Process</a></li>
-          <li><a href="#library">Library</a></li>
-          <li><a href="#laboratory">Laboratory</a></li>
+          <li><a href="academics.html#rules-regulations">Rules &amp; Regulations</a></li>
+          <li><a href="academics.html#examination-process">Examination Process</a></li>
+          <li><a href="academics.html#library">Library</a></li>
+          <li><a href="academics.html#laboratory">Laboratory</a></li>
         </ul>
       </nav>
 
@@ -433,4 +414,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
