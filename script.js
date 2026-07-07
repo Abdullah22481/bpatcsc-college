@@ -1,13 +1,3 @@
-/* =====================================================================
-   BPATCSC — REDESIGN SCRIPT
-   Modules:
-     1. Header scroll state
-     2. Mega-menu / dropdown controller (desktop click+hover, mobile accordion)
-     3. Mobile nav drawer toggle
-     4. Hero vector "draw-in" animation (Lottie-style, no library)
-     5. Scroll-reveal for content sections
-     6. Misc (footer year)
-===================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScrollState();
   initMegaMenu();
@@ -17,11 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
 });
 
-/* ---------------------------------------------------------------------
-   1. HEADER SCROLL STATE
-   Adds a subtle shadow once the page has scrolled, so the sticky
-   header reads as "lifted" above content instead of always floating.
---------------------------------------------------------------------- */
 function initHeaderScrollState() {
   const header = document.getElementById('site-header');
   if (!header) return;
@@ -33,13 +18,6 @@ function initHeaderScrollState() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-/* ---------------------------------------------------------------------
-   2. MEGA-MENU / DROPDOWN CONTROLLER
-   Desktop relies on CSS :hover for the "quick glance" case, but every
-   panel is ALSO click-toggleable and keyboard-operable via the
-   [aria-expanded] button + [data-open] attribute on the parent <li>.
-   This is what mobile uses exclusively (no hover on touch devices).
---------------------------------------------------------------------- */
 function initMegaMenu() {
   const items = document.querySelectorAll('.primary-nav__item.has-dropdown, .primary-nav__item.has-megamenu');
   const scrim = document.getElementById('nav-scrim');
@@ -84,10 +62,6 @@ function initMegaMenu() {
   scrim?.addEventListener('click', closeAll);
 }
 
-/* ---------------------------------------------------------------------
-   3. MOBILE NAV DRAWER
-   Hamburger toggles a full-height accordion drawer (see CSS §9).
---------------------------------------------------------------------- */
 function initMobileNav() {
   const toggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('primary-nav');
@@ -110,17 +84,6 @@ function initMobileNav() {
   });
 }
 
-/* ---------------------------------------------------------------------
-   4. HERO VECTOR "DRAW-IN" ANIMATION
-   Technique: for every path/line flagged .draw-path we read its real
-   length with getTotalLength(), store it as a CSS custom property
-   (--len), and stagger a small --delay per element. The CSS keyframe
-   then animates stroke-dashoffset from that length down to 0, which
-   reads as the illustration being hand-drawn — a common, dependency-
-   free stand-in for a Lottie vector build-in.
-   Once drawing finishes, .is-ambient is added so a couple of elements
-   (the sun rings, the small leaf/accent stroke) drift gently forever.
---------------------------------------------------------------------- */
 function initHeroAnimation() {
   const svg = document.getElementById('hero-svg');
   if (!svg) return;
@@ -158,13 +121,7 @@ function initHeroAnimation() {
   }
 }
 
-/* ---------------------------------------------------------------------
-   5. SCROLL-REVEAL
-   Fades + lifts any .reveal element into place the first time it
-   crosses into the viewport. Cheap, low-noise alternative to a full
-   animation library, and fully skipped under prefers-reduced-motion
-   via the CSS rule that removes the transition entirely.
---------------------------------------------------------------------- */
+
 function initScrollReveal() {
   const targets = document.querySelectorAll('.reveal');
   if (!targets.length) return;
