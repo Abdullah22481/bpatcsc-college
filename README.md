@@ -50,4 +50,4 @@ The primary navigation layer handles layouts differently depending on screen siz
 ### Launch Sequence
 1. Clone the project files locally:
    ```bash
-   git clone [https://github.com/your-username/repository-name.git](https://github.com/your-username/repository-name.git)
+   git clone https://github.com/Abdullah22481/bpatcsc-college.git
