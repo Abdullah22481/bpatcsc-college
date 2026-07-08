@@ -2,7 +2,7 @@
 
 A frontend web portal built for the Bangladesh Public Administration Training Centre School & College (BPATCSC)[cite: 1, 2, 3]. This repository demonstrates a highly structured vanilla frontend development workflow, showcasing maintainable component architecture, performance engineering, and accessible user flows without relying on heavy third-party framework overhead.
 
-🔗 **Live Production Link:** [https://abdullah22481.github.io/bpatcsc-college/]
+🔗 **Live Website Link:** [https://abdullah22481.github.io/bpatcsc-college/]
 
 ---
 
